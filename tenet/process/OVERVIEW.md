@@ -69,7 +69,7 @@ flowchart LR
 | **G0** | 值不值得做、边界、合规红线、Tenet 引用方式 | [`gates/G0-charter.md`](gates/G0-charter.md) |
 | **Discovery** | 选型、ADR、spike、非功能底线 | [`discovery/exit-criteria.md`](discovery/exit-criteria.md) |
 | **G1** | Discovery 出口 → 允许 **正式** 工程落盘 | [`gates/G1-baseline.md`](gates/G1-baseline.md) |
-| **Delivery** | Scrum **或** Kanban 迭代交付 | 本文件下文；细则 v2 |
+| **Delivery** | Scrum **或** Kanban 迭代交付 | [`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)、[`delivery/definition-of-done.md`](delivery/definition-of-done.md) |
 | **发布** | 小批量、可回滚、门禁语义 | 本文件「自动化与发布」 |
 
 **G2（重大范围/架构变更）**：v1 仅在 G1 中指向 **ADR + 人工评审**；独立 `G2-change.md` 为 v2。
@@ -98,7 +98,7 @@ Tenet **不替团队选**；G1 通过时在基线记录中 **写明选用哪一�
 | **Scrum** | 产品型、需固定节奏演示、2–4 周承诺 | 迭代计划 + Review 演示增量；AI 不虚构 Sprint 编号除非项目已定义 |
 | **Kanban** | 运维、缺陷、持续小改、流量稳定 | 限制 WIP、可视化；AI 不强行套 Sprint 仪式 |
 
-**v2**：[`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)、[`delivery/scrum-minimal.md`](delivery/scrum-minimal.md)、[`delivery/kanban-minimal.md`](delivery/kanban-minimal.md)、[`delivery/definition-of-done.md`](delivery/definition-of-done.md)（v1 未创建，路径预留）。
+**v2**：[`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)、[`delivery/definition-of-done.md`](delivery/definition-of-done.md)。
 
 ---
 
@@ -159,14 +159,18 @@ AI 在改代码前应提醒：**当前变更是否对应 Delivery 项、是否�
 - [`discovery/exit-criteria.md`](discovery/exit-criteria.md)
 - 仓库 `README.md`
 
+**v1.2 已包含**
+
+- [`delivery/definition-of-done.md`](delivery/definition-of-done.md)
+- [`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)
+- [`../adoption/for-newcomers.md`](../adoption/for-newcomers.md)
+
 **v2 路线图（规划，未写不入 AI 强制链）**
 
-1. `delivery/definition-of-done.md` — 完成定义
-2. `delivery/choose-scrum-kanban.md` — 交付方式决策树
-3. `collaboration/roles.md`、`code-review.md`、`ai-collaboration.md`
-4. `cpp/engineering-standards.md`、`adr-template.md`
-5. `adoption/for-newcomers.md`、`for-leads.md`
-6. `gates/G2-change.md` — 重大变更关口
+1. `collaboration/roles.md`、`code-review.md`
+2. `cpp/engineering-standards.md`、`adr-template.md`
+3. `adoption/for-leads.md`
+4. `gates/G2-change.md` — 重大变更关口
 
 ---
 
@@ -177,4 +181,4 @@ Tenet v1 **流程正文全中文**。仓库 `README.md` 采用 **顶英下中**�
 
 ---
 
-**文档版本**：v1.0 · Delivery 迭代 4（v1 五件套 + README + MIT LICENSE；互链已对齐）
+**文档版本**：v1.2 · v1 五件套 + 教练层 + DoD / 选型 / 新手 adoption

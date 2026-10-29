@@ -137,12 +137,12 @@ AI **不得** 代写「确认人」姓名或伪造签字；可协助生成模板
 
 ---
 
-## 与 v2 facilitation 的分工
+## 与 facilitation 的分工
 
-- **v1（本文）**：**裁判** — 什么条件够格进入 G1
-- **v2 `facilitation.md`（规划）**：**教练** — 怎么问、怎么开对比讨论、怎么写 ADR
+- **本文（exit-criteria）**：**裁判** — 什么条件够格进入 G1
+- **[`facilitation.md`](facilitation.md)**：**教练** — 停步、模板、ABCD、怎么问
 
-未写 facilitation 前，AI 仍须遵守 [`../../AGENTS.md`](../../AGENTS.md) 与 G0/G1，用通用提问完成 Discovery。
+Discovery 出口齐后，AI 须发 [`../prompts/stage-feedback.md`](../prompts/stage-feedback.md)「Discovery 出口停步」再谈 G1；用户可用 [`../prompts/discovery-sync.md`](../prompts/discovery-sync.md)。
 
 ---
 
@@ -155,4 +155,4 @@ AI **不得** 代写「确认人」姓名或伪造签字；可协助生成模板
 
 ---
 
-文档 v1.0 · Tenet process（与 OVERVIEW 版本一致）
+文档 v1.1 · Tenet process（与 OVERVIEW 版本一致）

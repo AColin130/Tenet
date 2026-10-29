@@ -147,6 +147,12 @@ Tenet 仓库 **不包含** 用户项目 charter 实例。
 
 ---
 
+## 本阶段结束（教练）
+
+G0 标记 **通过** 后，AI **必须停步** 并发出 [`../prompts/stage-feedback.md`](../prompts/stage-feedback.md)「G0 完成后」反馈块；用户可用 [`../prompts/g0-start.md`](../prompts/g0-start.md) 开启本阶段。见 [`../discovery/facilitation.md`](../discovery/facilitation.md)。
+
+---
+
 ## 相关文档
 
 - [`../OVERVIEW.md`](../OVERVIEW.md) — 总流程
@@ -156,4 +162,4 @@ Tenet 仓库 **不包含** 用户项目 charter 实例。
 
 ---
 
-文档 v1.0 · Tenet process（与 OVERVIEW 版本一致）
+文档 v1.1 · Tenet process（与 OVERVIEW 版本一致）

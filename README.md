@@ -1,7 +1,7 @@
 # Tenet
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/docs-v1.0-informational)](tenet/process/OVERVIEW.md)
+[![Docs](https://img.shields.io/badge/docs-v1.2-informational)](tenet/process/OVERVIEW.md)
 
 **Tenet** is an open **meta-layer** for C++ teams: **team rules + AI guidance** — not a clone-and-run scaffold with a fixed folder layout.
 
@@ -121,7 +121,7 @@ Tenet v1 流程正文为 **中文**；专有名词首次出现常用「中文（
 第 5 步  Delivery：按 Scrum 或 Kanban 迭代交付（在 G1 里选定并写进基线）
 ```
 
-**和 AI 对话时可以这样说（复制改项目名即可）：**
+**和 AI 对话时可以这样说：** 直接用 Tenet 模板（推荐）→ [`tenet/process/prompts/g0-start.md`](tenet/process/prompts/g0-start.md) **复制全文**，改方括号后发；或沿用下面简版：
 
 ```text
 请先阅读我仓库里的 tenet/AGENTS.md 和 tenet/process/OVERVIEW.md。
@@ -195,6 +195,8 @@ git submodule update --init --recursive
 |------|------|
 | 在对话里 **@ `tenet/AGENTS.md`** | 避免 AI 只读业务根胶水而跳过 Tenet 强制规则 |
 | 说明 **当前阶段**（Discovery / 已过 G1 的 Delivery） | AI 依 [`tenet/AGENTS.md`](tenet/AGENTS.md) 约束是否允许批量落盘 |
+| 阶段结束等 AI **停步问反馈** | v1.1 起 AI 须在 G0/G1/Delivery 单项后发问；见 [`facilitation.md`](tenet/process/discovery/facilitation.md) |
+| 不知道发什么 | 用 [`tenet/process/prompts/`](tenet/process/prompts/README.md) 里对应模板 |
 | 架构结论写入 **`docs/adr/`**（路径自定） | Tenet 要求「对话结论落盘」，不是口头说说 |
 | Cursor 先打开根 [`AGENTS.md`](AGENTS.md) 时 | 那是路由；**你** 应打开 [`tenet/AGENTS.md`](tenet/AGENTS.md) 或 `@` 它 |
 
@@ -241,8 +243,14 @@ flowchart LR
 | [`tenet/process/gates/G0-charter.md`](tenet/process/gates/G0-charter.md) | 开工 / 立项 |
 | [`tenet/process/discovery/exit-criteria.md`](tenet/process/discovery/exit-criteria.md) | 探索阶段结束标准 |
 | [`tenet/process/gates/G1-baseline.md`](tenet/process/gates/G1-baseline.md) | 允许正式落盘 |
+| [`tenet/process/discovery/facilitation.md`](tenet/process/discovery/facilitation.md) | 教练：停步、ABCD 选项 |
+| [`tenet/process/prompts/README.md`](tenet/process/prompts/README.md) | **复制给 AI** 的短模板 |
+| [`tenet/collaboration/ai-collaboration.md`](tenet/collaboration/ai-collaboration.md) | AI 回复格式（先一步、再展开） |
+| [`tenet/adoption/for-newcomers.md`](tenet/adoption/for-newcomers.md) | 零基础路径 |
+| [`tenet/process/delivery/definition-of-done.md`](tenet/process/delivery/definition-of-done.md) | 一项何时算做完 |
+| [`tenet/process/delivery/choose-scrum-kanban.md`](tenet/process/delivery/choose-scrum-kanban.md) | Scrum / Kanban |
 
-**v2 规划**（DoD、C++ 工程规范、`adoption/for-newcomers.md` 等）见 OVERVIEW「v2 路线图」；v1 以现有五件套为准。
+**v2 规划**（C++ 工程规范、`for-leads`、G2 等）见 OVERVIEW「v2 路线图」。
 
 ---
 
@@ -255,13 +263,22 @@ Tenet/                          # 官方仓（本仓库）
 ├── README.md                   # 本文件
 └── tenet/
     ├── AGENTS.md               # 流程与 AI 协作 SSOT
+    ├── collaboration/
+    │   └── ai-collaboration.md
+    ├── adoption/
+    │   └── for-newcomers.md
     └── process/
         ├── OVERVIEW.md
+        ├── delivery/
+        │   ├── definition-of-done.md
+        │   └── choose-scrum-kanban.md
         ├── gates/
         │   ├── G0-charter.md
         │   └── G1-baseline.md
-        └── discovery/
-            └── exit-criteria.md
+        ├── discovery/
+        │   ├── exit-criteria.md
+        │   └── facilitation.md
+        └── prompts/            # 复制给 AI 的模板
 ```
 
 嵌入业务仓后，典型形状：
@@ -294,7 +311,7 @@ A：不必须，但胶水 `AGENTS.md` 里的链接要指向你实际路径；Ten
 A：MIT 短、 permissive，便于嵌入业务仓；保留版权声明即可。若你特别关心专利授权条款，可在 **你的** 项目中另行评估许可证策略（G0 红线之一）。
 
 **Q：我是纯新手，看不懂 ADR / Stage-Gate？**  
-A：先只做 G0 问卷（[`G0-charter.md`](tenet/process/gates/G0-charter.md) 底部模板），让 AI **逐节提问**；Discovery 里再慢慢写「我们为什么选这种构建方式」。v2 将补充 `adoption/for-newcomers.md` 裁剪说明。
+A：先只做 G0 问卷（[`G0-charter.md`](tenet/process/gates/G0-charter.md) 底部模板），或 [`for-newcomers.md`](tenet/adoption/for-newcomers.md) + [`prompts/g0-start.md`](tenet/process/prompts/g0-start.md)。
 
 ---
 
@@ -318,4 +335,4 @@ A：先只做 G0 问卷（[`G0-charter.md`](tenet/process/gates/G0-charter.md) �
 
 ---
 
-**文档版本**：v1.0（与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) 文末一致）
+**文档版本**：v1.2（与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) 文末一致）

@@ -22,7 +22,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
    - **Discovery**：探索、对比、ADR 草案、spike；默认 **不** 正式落盘工程基线。
    - **G0 未过**：不得假设产品边界、许可证策略、发布目标（见 [`process/gates/G0-charter.md`](process/gates/G0-charter.md)）。
    - **G1 未过**：不得将讨论中的方案当作 **已批准基线** 批量写入仓库（见 [`process/gates/G1-baseline.md`](process/gates/G1-baseline.md)、[`process/discovery/exit-criteria.md`](process/discovery/exit-criteria.md)）。
-   - **Delivery**：已过 G1；变更应对应 backlog / 看板项，并满足 DoD（DoD 细则 v2；v1 以 G1 与 exit-criteria 为底线）。
+   - **Delivery**：已过 G1；变更应对应 backlog / 看板项，并满足 DoD（见 [`process/delivery/definition-of-done.md`](process/delivery/definition-of-done.md)）。
 
 ---
 
@@ -61,24 +61,39 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 
 ---
 
+## 阶段停步与教练引导（v1.1 起强制）
+
+- 完成 **G0 通过、Discovery 关键节点、G1 通过、Delivery 单项验收** 后，**必须** 按 [`process/discovery/facilitation.md`](process/discovery/facilitation.md) **停步协议** 发出 [`process/prompts/stage-feedback.md`](process/prompts/stage-feedback.md) 中对应反馈块，**等待用户回复** 后再进入下一阶段或下一 Delivery 项。
+- 用户不知如何输入时：**贴出** [`process/prompts/`](process/prompts/README.md) 中 **一个** 可复制模板（见 facilitation），**不要** 仅用长文解释代替。
+- 架构分叉优先 **ABCD 选项**（facilitation 选项卡）；用户仅说「继续」但未答反馈问句时 → **追问一句**，仍 **不** 越关口。
+- 默认回复结构见 [`collaboration/ai-collaboration.md`](collaboration/ai-collaboration.md)（结论 → 一步 → 可选展开）。
+
+---
+
 ## 架构与选型
 
 - 架构答案 **必须来自对话结论**，并 **落盘为 ADR 或基线记录**（路径由用户项目自定；Tenet 建议 `docs/adr/`）。
-- Tenet 只提供 **权衡维度与教练问法**（v2 `discovery/facilitation.md`），**不给**「默认三层 / 默认 monorepo」答案。
+- Tenet 提供 **权衡问法、停步与模板**（[`process/discovery/facilitation.md`](process/discovery/facilitation.md)），**不给**「默认三层 / 默认 monorepo」答案。
 - 引用第三方、许可证、合规：须在 Discovery 出口前扫过红线（见 exit-criteria）。
 
 ---
 
-## 文档地图（v1）
+## 文档地图
 
 | 文档 | 用途 |
 |------|------|
-| [`process/OVERVIEW.md`](process/OVERVIEW.md) | 总流程、嵌入方式、v2 路线图 |
+| [`process/OVERVIEW.md`](process/OVERVIEW.md) | 总流程、嵌入方式、路线图 |
 | [`process/gates/G0-charter.md`](process/gates/G0-charter.md) | 立项关口 |
 | [`process/gates/G1-baseline.md`](process/gates/G1-baseline.md) | Discovery → Delivery；正式落盘许可 |
 | [`process/discovery/exit-criteria.md`](process/discovery/exit-criteria.md) | Discovery 硬出口 |
+| [`process/discovery/facilitation.md`](process/discovery/facilitation.md) | 教练：停步、ABCD、模板入口 |
+| [`process/prompts/README.md`](process/prompts/README.md) | 可复制对话模板 |
+| [`collaboration/ai-collaboration.md`](collaboration/ai-collaboration.md) | AI 回复格式与多工具约定 |
+| [`process/delivery/definition-of-done.md`](process/delivery/definition-of-done.md) | Delivery 完成标准 |
+| [`process/delivery/choose-scrum-kanban.md`](process/delivery/choose-scrum-kanban.md) | Scrum / Kanban 选型 |
+| [`adoption/for-newcomers.md`](adoption/for-newcomers.md) | 新手路径与模板入口 |
 
-v2 计划（未写不入链）：`definition-of-done.md`、`choose-scrum-kanban.md`、`collaboration/*`、`cpp/*`、`adoption/*`。
+v2 计划（未写不入链）：`collaboration/roles.md`、`code-review.md`、`cpp/*`、`adoption/for-leads.md`、`gates/G2-change.md`。
 
 ---
 
@@ -111,4 +126,4 @@ v2 计划（未写不入链）：`definition-of-done.md`、`choose-scrum-kanban.
 
 ---
 
-文档 v1.0 · 与 [`process/OVERVIEW.md`](process/OVERVIEW.md) 版本一致。
+文档 v1.2 · 与 [`process/OVERVIEW.md`](process/OVERVIEW.md) 版本一致。

@@ -118,7 +118,7 @@ AI：**不得** 因 G1 未通过而继续批量添加「正式」工程文件；
 3. **Kanban**：按 WIP 与列定义流动；不强行虚构 Sprint  
 4. **合并与发布**：满足基线第 6 节门禁语义；自动化能覆盖则覆盖  
 
-DoD 细项 v2 见 [`../OVERVIEW.md`](../OVERVIEW.md) 路线图；v1 以基线第 6 节 + [`../../AGENTS.md`](../../AGENTS.md) 为底线。
+DoD 细项见 [`../delivery/definition-of-done.md`](../delivery/definition-of-done.md)；v1 重大变更见下节。
 
 ---
 
@@ -162,13 +162,20 @@ Tenet 仓库 **不包含** 用户 baseline 实例。
 
 ---
 
+## 本阶段结束（教练）
+
+G1 标记 **通过** 后，AI **必须停步** 并发出 [`../prompts/stage-feedback.md`](../prompts/stage-feedback.md)「G1 通过后」反馈块；申请 G1 可用 [`../prompts/g1-request.md`](../prompts/g1-request.md)。见 [`../discovery/facilitation.md`](../discovery/facilitation.md)。
+
+---
+
 ## 相关文档
 
 - [`G0-charter.md`](G0-charter.md)
 - [`../discovery/exit-criteria.md`](../discovery/exit-criteria.md)
+- [`../discovery/facilitation.md`](../discovery/facilitation.md)
 - [`../OVERVIEW.md`](../OVERVIEW.md)
 - [`../../AGENTS.md`](../../AGENTS.md)
 
 ---
 
-文档 v1.0 · Tenet process（与 OVERVIEW 版本一致）
+文档 v1.1 · Tenet process（与 OVERVIEW 版本一致）
