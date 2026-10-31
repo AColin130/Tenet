@@ -219,7 +219,7 @@ flowchart LR
   G0 --> D
   D -->|exit-criteria| G1
   G1 --> V
-  V -->|重大变更 v2 G2| D
+  V -->|重大变更 G2| D
 ```
 
 | 阶段 | 你要完成什么 | Tenet 文档 |

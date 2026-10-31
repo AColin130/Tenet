@@ -84,7 +84,7 @@ flowchart LR
 |---|-----------|----------|
 | **目的** | 减少「直接开写却做错架构」的浪费 | 可预测地交付增量 |
 | **典型产出** | 对比、ADR、spike 结论、依赖与风险 | 与基线一致的代码、构建、测试 |
-| **Tenet 提供** | 出口标准、AI 禁止项 | G1 后落盘规则、迭代节奏（v2 DoD） |
+| **Tenet 提供** | 出口标准、AI 禁止项 | G1 后落盘规则、DoD（见 [`delivery/definition-of-done.md`](delivery/definition-of-done.md)） |
 | **产出放哪** | **用户项目自建**（建议 `docs/discovery/`、`docs/adr/`） | 用户 repo 内模块与构建文件 |
 
 **硬规则**：未满足 [`discovery/exit-criteria.md`](discovery/exit-criteria.md) **且** 未过 G1 → **不** 把临时方案当作正式基线批量写入。
