@@ -10,6 +10,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 - **流程、关口、Discovery/Delivery 边界、禁止项**：以本文件及 `process/` 下文档为准。
 - **业务架构与工程形状**：由 **用户 + AI 在对话中** 选型并记录；Tenet **不提供** 默认 monorepo / exe / 库布局模板。
 - 用户业务仓中若存在根 `AGENTS.md`：**流程以本文件为准**；根文件仅保留 **本项目事实**（构建入口、测试路径、CODEOWNERS 等）。冲突时 — **流程归 Tenet，本地事实归根文件**。
+- **项目特有内容**（charter、backlog、ADR、baseline、源码）**不得** 写入 `tenet/`；须放在业务仓 `docs/` 等路径。见 [`adoption/project-vs-tenet.md`](adoption/project-vs-tenet.md)。
 
 若你尚未完整阅读本文件，**停止** 批量生成代码、目录树或 CMake；先读 [`process/OVERVIEW.md`](process/OVERVIEW.md) 并判定当前阶段。
 
@@ -39,6 +40,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 
 - 在未过 **G1** 前，批量创建「正式」模块树、完整 CMake 工程、或与 ADR 未记录架构不一致的目录。
 - 将 Tenet 文档中的 **示例路径** 当作必须采用的 repo 形状。
+- 在 **`tenet/` 目录内** 创建或修改 **项目特有** 的 charter、backlog、ADR、baseline 或业务源码。
 
 **例外**
 
@@ -94,6 +96,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 | [`process/gates/G2-change.md`](process/gates/G2-change.md) | G1 后重大变更 |
 | [`cpp/adr-template.md`](cpp/adr-template.md) | ADR 空白模板 |
 | [`adoption/for-newcomers.md`](adoption/for-newcomers.md) | 新手路径、拷贝 tenet、单仓 |
+| [`adoption/project-vs-tenet.md`](adoption/project-vs-tenet.md) | 项目 docs vs tenet/；backlog；更新不丢 |
 | [`adoption/for-leads.md`](adoption/for-leads.md) | 负责人裁剪 Tenet |
 | [`collaboration/roles.md`](collaboration/roles.md) | 角色与关口签字 |
 | [`collaboration/code-review.md`](collaboration/code-review.md) | Review 与 DoD |

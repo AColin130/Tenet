@@ -138,8 +138,9 @@ AI 在改代码前应提醒：**当前变更是否对应 Delivery 项、是否�
 开始任务前 AI 必须阅读 tenet/AGENTS.md 与 tenet/process/OVERVIEW.md。
 ```
 
-3. **同步**：Tenet 上游更新时只合并 `tenet/`；业务根胶水尽量保持稳定。
-4. **Cursor / 其他 AI**：对话中 @ `tenet/AGENTS.md`，避免只 @ 业务根而跳过 Tenet。
+3. **项目文件**：charter、backlog、ADR、baseline 放 **`docs/`**（及 `src/`），**不要** 写进 `tenet/`。见 [`../adoption/project-vs-tenet.md`](../adoption/project-vs-tenet.md)。
+4. **同步**：Tenet 上游更新时只合并 `tenet/`；业务根胶水尽量保持稳定。
+5. **Cursor / 其他 AI**：对话中 @ `tenet/AGENTS.md`，避免只 @ 业务根而跳过 Tenet。
 
 ---
 

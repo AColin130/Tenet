@@ -282,7 +282,8 @@ Tenet/                          # 官方仓（本仓库）
     │   └── commit-conventions.md
     ├── adoption/
     │   ├── for-newcomers.md
-    │   └── for-leads.md
+    │   ├── for-leads.md
+    │   └── project-vs-tenet.md
     └── process/
         ├── OVERVIEW.md
         ├── delivery/
@@ -307,6 +308,7 @@ my-cpp-app/
 ├── AGENTS.md                   # 你的胶水（本地事实 + 指向 tenet）
 ├── docs/
 │   ├── charter.md              # 建议：项目 G0
+│   ├── backlog.md              # 建议：待做需求（勿放进 tenet/）
 │   └── adr/                    # 建议：架构决策记录
 ├── tenet/                      # 拷贝或 submodule 自 Tenet 官方仓（推荐拷贝 + 单仓）
 │   └── …

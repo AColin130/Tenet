@@ -8,7 +8,8 @@
 
 1. **Tenet 不给你现成工程树** — 它规定 **什么时候才能大批量建目录**。  
 2. **权威在 `tenet/AGENTS.md`** — 对话里 @ 它；根目录 `AGENTS.md` 若是「胶水」，也要指向 tenet。  
-3. **做完一步会停** — AI 会问你还缺什么；你 **回复后再继续**（见 [`../process/prompts/stage-feedback.md`](../process/prompts/stage-feedback.md)）。
+3. **做完一步会停** — AI 会问你还缺什么；你 **回复后再继续**（见 [`../process/prompts/stage-feedback.md`](../process/prompts/stage-feedback.md)）。  
+4. **需求与代码不进 `tenet/`** — 项目特有的写 **`docs/`**（见 [`project-vs-tenet.md`](project-vs-tenet.md)）。
 
 ---
 
@@ -55,9 +56,18 @@
 
 ## 试点已经 hello world 了，我下一步？
 
-- 新想法 **不改范围** → 写进 backlog，用 **delivery-item** 模板一项一项做。  
+- 新想法 **不改范围** → 写进 **`docs/backlog.md`**（或 Issues），用 **delivery-item** 模板一项一项做。  
 - 要 **换工具链 / 扩 scope** → 跟 AI 说，走 **ADR + G2**（[`G2-change.md`](../process/gates/G2-change.md)、[`adr-template.md`](../cpp/adr-template.md)）。  
 - 不用 **补很多正式需求文档**；Tenet 要的是 **该落盘时落盘**（charter / ADR / baseline）。
+
+---
+
+## 项目文件 vs `tenet/` 包（必读）
+
+**你的需求、charter、backlog、源码** 都在 **`tenet/` 外面**（通常 `docs/`、`src/`）。  
+更新 Tenet 只换 **手册目录 `tenet/`**，**不会** 覆盖你的 backlog 与代码；**不会** 因此把业务软件 push 到 Tenet 官方仓。
+
+全文：[`project-vs-tenet.md`](project-vs-tenet.md)。
 
 ---
 
@@ -92,8 +102,9 @@ Tenet **官方仓不含你的业务代码**；C++ 只在 **你自己的仓库** 
 - [`../process/gates/G2-change.md`](../process/gates/G2-change.md)
 - [`../cpp/adr-template.md`](../cpp/adr-template.md)
 - [`../process/delivery/definition-of-done.md`](../process/delivery/definition-of-done.md)
-- [`for-leads.md`](for-leads.md)
+- [`project-vs-tenet.md`](project-vs-tenet.md) — **需求/backlog 放哪、更新手册不丢**
 - 仓库 [`README.md`](../../README.md)
+- [`for-leads.md`](for-leads.md)
 
 ---
 

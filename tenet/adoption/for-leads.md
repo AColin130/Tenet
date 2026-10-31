@@ -45,9 +45,23 @@ Tenet **默认** 参照 20+ 人习惯；小团队 **应删仪式、保留关口*
 | 仓库 | 负责人做什么 |
 |------|----------------|
 | **Tenet（D:\Tenet / GitHub）** | 只改 `tenet/**` 元文档；**无业务 C++**；Git 约定见根目录 **[`CONTRIBUTING.md`](../../CONTRIBUTING.md)** |
-| **业务仓** | 维护 charter/baseline/ADR；**拷贝或更新 tenet/**；Git 约定 **自选**（可复制 [`../collaboration/commit-conventions.md`](../collaboration/commit-conventions.md)） |
+| **业务仓** | 维护 charter/baseline/ADR/**backlog**；**拷贝或更新 tenet/**；**项目文件不进 tenet/**（见 [`project-vs-tenet.md`](project-vs-tenet.md)） |
 
 C++ 测试仅 **验证 Tenet 能用**（如桌面试点），不是 Tenet 产品交付物。
+
+---
+
+## 项目数据与更新 Tenet（负责人必知）
+
+| 问题 | 答案 |
+|------|------|
+| 用户需求保存哪？ | 业务仓 **`docs/`**（+ `docs/backlog.md` / Issues），**不在 `tenet/`** |
+| 新版本覆盖 `tenet/` 会丢吗？ | **不会** 丢需求/代码，只要需求 **不在 `tenet/`** |
+| push 会把业务软件传到 Tenet 官方吗？ | **不会**，除非 remote 指错；业务 push **自己的 remote** |
+
+更新手册 SOP：业务仓先 commit → 只替换/合并 **`tenet/`** → 若曾改 `tenet/` 内文则手动 merge。
+
+全文：[`project-vs-tenet.md`](project-vs-tenet.md)。
 
 ---
 
@@ -75,6 +89,7 @@ C++ 测试仅 **验证 Tenet 能用**（如桌面试点），不是 Tenet 产品
 - [`for-newcomers.md`](for-newcomers.md)
 - [`../collaboration/roles.md`](../collaboration/roles.md)
 - [`../process/OVERVIEW.md`](../process/OVERVIEW.md)
+- [`project-vs-tenet.md`](project-vs-tenet.md)
 - [`../collaboration/commit-conventions.md`](../collaboration/commit-conventions.md)（业务仓可选）
 - [`../../CONTRIBUTING.md`](../../CONTRIBUTING.md)（官方仓 Git）
 

@@ -7,6 +7,7 @@
 
 ### Added
 
+- `tenet/adoption/project-vs-tenet.md`：项目 `docs/` vs `tenet/`、backlog、更新手册不丢、双 remote 说明
 - `.github/` Issue / PR 模板
 - `CHANGELOG.md`
 - `tenet/process/prompts/g2-request.md`
