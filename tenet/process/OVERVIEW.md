@@ -194,4 +194,4 @@ Tenet v1 **流程正文全中文**。仓库 `README.md` 采用 **顶英下中**�
 
 ---
 
-**文档版本**：v1.4 · 完整元层文档集（流程 + 教练 + G2 + 协作 + C++ 底线 + adoption）
+**文档版本**：v1.5 · Tier/doc-map 模板、Grill+Doc、Cursor 范例（[`integration-backlog.md`](../adoption/integration-backlog.md) 已 closed）
