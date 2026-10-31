@@ -31,6 +31,8 @@ push **Tenet 官方仓** = 只改框架文档 — **不是** 上传你的软件�
 | **待做 / 一半定好的需求** | **`docs/backlog.md`** 或 **本仓 GitHub Issues** | `tenet/` |
 | 源码、构建 | `src/`、根 `CMakeLists.txt` 等 | `tenet/` |
 | 本地构建命令 | 根 **`AGENTS.md`（胶水）** | Tenet 官方仓根 AGENTS |
+| **AI doc-map、治理 Tier** | `docs/ai-doc-map.md`、`docs/governance.md`（从 tenet 模板复制） | `tenet/` |
+| **冷启动** | 根 `llms.txt`（可选） | `tenet/` |
 
 ### `docs/backlog.md` 最小模板（可复制）
 

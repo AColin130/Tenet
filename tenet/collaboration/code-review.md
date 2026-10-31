@@ -28,12 +28,19 @@ Review 是 **DoD 第 4 条** 的落地方式。Tenet 不绑定 GitHub/GitLab UI�
 ```text
 【Review 清单】
 - [ ] 与 docs/baseline.md 及 ADR 一致
+- [ ] AI/作者已 cite docs/ai-doc-map.md 一行（若已启用）
 - [ ] 验收命令/测试已跑（注明命令）
 - [ ] 无 G0 禁止的依赖/license
 - [ ] 非 disposable spike 残留
 - [ ] 需 ADR 的变更已 ADR 已接受
 - [ ] 合并前门禁（baseline §6）满足
+- [ ] PR 描述含 SSOT 路径（见 templates/pull_request_template.business.md）
 ```
+
+## 新符号 / API（不维护全量清单）
+
+- 新增对外符号前：**grep 仓库** 是否已有；更新 **doc-map 所指** API/模块 doc 或 ADR。  
+- 术语消歧用 **`docs/GLOSSARY.md`**（可选），与 map 一行分工。
 
 ---
 

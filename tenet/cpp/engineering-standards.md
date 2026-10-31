@@ -27,6 +27,12 @@
 | **所有权/异常** | 项目级风格（如是否允许异常）写 ADR |
 | **测试** | 单元测试框架 **若采用** 写 ADR；DoD 引用验收命令 |
 
+## Testing SSOT（业务仓）
+
+- 在 **`docs/ai-doc-map.md`** 设一行 **测试/验收**（如 `docs/testing.md`）：build target、ctest 路径、必跑用例。  
+- Tenet DoD 只要求 **语义**「验收已跑」；**具体命令** 在业务 testing SSOT。  
+- 专题 `.mdc` 可在改 `src/` 时懒加载并 **链 testing SSOT**（见 cursor-rules-example）。
+
 未勾选的项 **不适用**；AI **不得** 因 Tenet 存在本文而 **默认** 引入 GoogleTest、vcpkg 等。
 
 ---
@@ -46,7 +52,8 @@
 
 - **禁止** 引用本文 **替代** 用户 baseline/ADR。  
 - 用户未采纳某条标准 → **不** 强行加 clang-format、测试框架等。  
-- 建议：G1 时问「baseline 要勾选哪些 engineering 底线？」并 **只写用户确认的**。
+- 建议：G1 时问「baseline 要勾选哪些 engineering 底线？」并 **只写用户确认的**。  
+- **新符号**：先 **grep**，再改 doc-map 所指 SSOT；不维护全量 API 清单。
 
 ---
 

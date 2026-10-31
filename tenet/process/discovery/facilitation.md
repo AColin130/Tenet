@@ -94,6 +94,8 @@ AI 在用户 **不知如何开口** 时，应 **直接贴对应模板**（不是
 
 **B/C** → ADR + [`../gates/G2-change.md`](../gates/G2-change.md)（及必要时 G0）。
 
+**Delivery 默认 Grill+Doc**（G1 后）：见 [`../delivery/grill-doc-default.md`](../delivery/grill-doc-default.md)；**不替代** 本文件停步协议。
+
 ---
 
 ## 与 Grill 的关系

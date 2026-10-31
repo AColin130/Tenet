@@ -38,6 +38,8 @@ Tenet **默认** 参照 20+ 人习惯；小团队 **应删仪式、保留关口*
 
 在 **baseline §5** 写「本仓采用档位 B」即可。
 
+**治理 Tier 0/1/2** 与 **doc-map** 模板：[`../collaboration/governance-tier-template.md`](../collaboration/governance-tier-template.md)、[`templates/`](../adoption/templates/README.md)。采纳清单：[`integration-backlog.md`](integration-backlog.md)（**已全部落地**）。
+
 ---
 
 ## Tenet 官方仓 vs 业务仓

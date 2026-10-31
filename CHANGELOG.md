@@ -7,7 +7,8 @@
 
 ### Added
 
-- `tenet/adoption/project-vs-tenet.md`：项目 `docs/` vs `tenet/`、backlog、更新手册不丢、双 remote 说明
+- v1.5：WeCarver 对照采纳 — Tier 模板、ai-doc-map/llms/PR/journal/mistake 模板、grill-doc-default、cursor-rules-example、ai-collaboration 扩展、根 `llms.txt`
+- `tenet/adoption/project-vs-tenet.md`：项目 `docs/` vs `tenet/` 包分离
 - `.github/` Issue / PR 模板
 - `CHANGELOG.md`
 - `tenet/process/prompts/g2-request.md`

@@ -1,0 +1,6 @@
+# Tenet (official repo) — LLM entry
+Hard constraints: Meta-layer only. No business C++ in this repository.
+Process SSOT: ./tenet/AGENTS.md
+Start: ./tenet/process/OVERVIEW.md
+Contributing (commit language): ./CONTRIBUTING.md
+Do not store project-specific docs inside ./tenet/ when embedding in a business repo — see ./tenet/adoption/project-vs-tenet.md

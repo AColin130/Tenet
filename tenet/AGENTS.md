@@ -101,9 +101,13 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 | [`collaboration/roles.md`](collaboration/roles.md) | 角色与关口签字 |
 | [`collaboration/code-review.md`](collaboration/code-review.md) | Review 与 DoD |
 | [`collaboration/commit-conventions.md`](collaboration/commit-conventions.md) | Git 提交模板（业务仓可选） |
-| [`cpp/engineering-standards.md`](cpp/engineering-standards.md) | C++ 协作底线（非目录模板） |
+| [`process/delivery/grill-doc-default.md`](process/delivery/grill-doc-default.md) | G1 后 Delivery 默认 Grill+Doc |
+| [`collaboration/governance-tier-template.md`](collaboration/governance-tier-template.md) | Tier 0/1/2 模板 |
+| [`adoption/templates/README.md`](adoption/templates/README.md) | 业务仓 doc-map / llms / PR 等模板 |
+| [`adoption/integration-backlog.md`](adoption/integration-backlog.md) | WeCarver 对照采纳（已 closed） |
+| [`adoption/cursor-rules-example/README.md`](adoption/cursor-rules-example/README.md) | Cursor .mdc 范例 |
 
-**路线图**：v1.4 文档集齐；Git 官方仓约定见仓库根 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)。后续 **Issue 驱动** 增量。
+**路线图**：v1.5 含 SSOT-map / Tier / Cursor 范例模板；Git 见 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)。后续 **Issue 驱动**。
 
 ---
 
@@ -137,4 +141,4 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 
 ---
 
-文档 v1.4 · 与 [`process/OVERVIEW.md`](process/OVERVIEW.md) 版本一致。
+文档 v1.5 · 与 [`process/OVERVIEW.md`](process/OVERVIEW.md) 版本一致。

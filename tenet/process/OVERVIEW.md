@@ -136,6 +136,11 @@ AI 在改代码前应提醒：**当前变更是否对应 Delivery 项、是否�
 流程与 AI 协作以 [./tenet/AGENTS.md](./tenet/AGENTS.md) 为准。
 本文件与 Tenet 冲突时：流程以 Tenet 为准，本地事实以本文件为准。
 开始任务前 AI 必须阅读 tenet/AGENTS.md 与 tenet/process/OVERVIEW.md。
+
+## 项目 SSOT（路径按项目改）
+- 问题 → 文档： [./docs/ai-doc-map.md](./docs/ai-doc-map.md)
+- 硬约束短列表（可选）： [./llms.txt](./llms.txt)
+- 模板来源：tenet/adoption/templates/
 ```
 
 3. **项目文件**：charter、backlog、ADR、baseline 放 **`docs/`**（及 `src/`），**不要** 写进 `tenet/`。见 [`../adoption/project-vs-tenet.md`](../adoption/project-vs-tenet.md)。

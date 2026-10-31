@@ -1,0 +1,23 @@
+# Tenet / 本业务仓 — LLM 冷启动（模板）
+
+> 复制到 **业务仓根** `llms.txt`（工具无关：Claude、Copilot、Cursor 均可读）。  
+> **硬约束保持极短**；流程正文仍 @ `tenet/AGENTS.md`，勿在此双写。
+
+## Hard constraints
+
+- Process SSOT: ./tenet/AGENTS.md — read before coding.
+- Project docs SSOT map: ./docs/ai-doc-map.md — cite one row before edits.
+- Do not store project charter/backlog/ADR inside ./tenet/
+- Stage gates: no bulk scaffold before G1 (see tenet/process/gates/G1-baseline.md)
+
+## Read order (cap ~40 items — do not load entire docs/)
+
+1. ./llms.txt (this file)
+2. ./AGENTS.md (glue: build/test facts)
+3. ./tenet/AGENTS.md
+4. ./docs/ai-doc-map.md → then only the SSOT file named in your cited row
+5. Topic rules: Cursor .mdc lazy glob only when touching matched paths
+
+## Entry
+
+- Human onboarding: tenet/adoption/for-newcomers.md (inside tenet/ package)
