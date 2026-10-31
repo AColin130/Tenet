@@ -1,7 +1,7 @@
 # Tenet
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/docs-v1.4-informational)](tenet/process/OVERVIEW.md)
+[![Docs](https://img.shields.io/badge/docs-v1.5-informational)](tenet/process/OVERVIEW.md)
 
 **Tenet** is an open **meta-layer** for C++ teams: **team rules + AI guidance** — not a clone-and-run scaffold with a fixed folder layout.
 
@@ -258,7 +258,7 @@ flowchart LR
 | [`tenet/collaboration/code-review.md`](tenet/collaboration/code-review.md) | Code Review |
 | [`tenet/adoption/for-leads.md`](tenet/adoption/for-leads.md) | Tech Lead / 裁剪流程 |
 
-**文档集 v1.4 已齐**；新主题见 GitHub Issue。
+**文档集 v1.5**（[`templates/`](tenet/adoption/templates/README.md)）；Release [`v1.5.0`](docs/releases/v1.5.0.md)
 
 ---
 
@@ -359,4 +359,4 @@ A：[`for-newcomers.md`](tenet/adoption/for-newcomers.md) + [`prompts/g0-start.m
 
 ---
 
-**文档版本**：v1.4（与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) 文末一致）。**本仓无业务 C++**；C++ 仅在你自己的业务仓中编写。
+**文档版本**：v1.5（与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) 文末一致）。**本仓无业务 C++**；C++ 仅在你自己的业务仓中编写。
