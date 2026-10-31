@@ -248,6 +248,7 @@ flowchart LR
 | [`tenet/process/prompts/README.md`](tenet/process/prompts/README.md) | **复制给 AI** 的短模板 |
 | [`tenet/collaboration/ai-collaboration.md`](tenet/collaboration/ai-collaboration.md) | AI 回复格式（先一步、再展开） |
 | [`tenet/adoption/for-newcomers.md`](tenet/adoption/for-newcomers.md) | 零基础路径 |
+| [`tenet/adoption/project-vs-tenet.md`](tenet/adoption/project-vs-tenet.md) | **需求/backlog 与 tenet/ 分离** |
 | [`tenet/process/delivery/definition-of-done.md`](tenet/process/delivery/definition-of-done.md) | 一项何时算做完 |
 | [`tenet/process/delivery/choose-scrum-kanban.md`](tenet/process/delivery/choose-scrum-kanban.md) | Scrum / Kanban |
 | [`tenet/process/gates/G2-change.md`](tenet/process/gates/G2-change.md) | G1 后重大变更 |
