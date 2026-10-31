@@ -41,6 +41,7 @@
 | 刚嵌入 Tenet / 新项目 | [`../prompts/g0-start.md`](../prompts/g0-start.md) |
 | Discovery 推进 | [`../prompts/discovery-sync.md`](../prompts/discovery-sync.md) |
 | 准备基线 | [`../prompts/g1-request.md`](../prompts/g1-request.md) |
+| 重大变更 | [`../prompts/g2-request.md`](../prompts/g2-request.md) |
 | 做一项交付 | [`../prompts/delivery-item.md`](../prompts/delivery-item.md) |
 | 阶段结束复盘 | [`../prompts/stage-feedback.md`](../prompts/stage-feedback.md) |
 

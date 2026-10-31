@@ -113,6 +113,7 @@ G2 用于 **Baseline 已通过（G1）之后** 的 **重大变更**：
 
 - [`G1-baseline.md`](G1-baseline.md)
 - [`../../cpp/adr-template.md`](../../cpp/adr-template.md)
+- [`../prompts/g2-request.md`](../prompts/g2-request.md)
 - [`../delivery/definition-of-done.md`](../delivery/definition-of-done.md)
 - [`../discovery/facilitation.md`](../discovery/facilitation.md) — ABCD「是否扩 scope / 换工具链」
 - [`../../AGENTS.md`](../../AGENTS.md)

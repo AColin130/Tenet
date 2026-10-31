@@ -11,7 +11,7 @@
 | 可以改 | 不要改 |
 |--------|--------|
 | `tenet/**` 流程与协作文档 | 在根 [`AGENTS.md`](AGENTS.md) **堆流程正文**（根文件仅路由） |
-| 根 `README.md`、`LICENSE`、**本文件** | 在本仓添加「示例 C++ 工程树」当产品交付 |
+| 根 `README.md`、`LICENSE`、**本文件**、`CHANGELOG.md` | 在本仓添加「示例 C++ 工程树」当产品交付 |
 
 变更后保持与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) **互链一致**。
 

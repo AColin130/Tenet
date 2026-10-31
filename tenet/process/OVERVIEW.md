@@ -97,10 +97,10 @@ Tenet **不替团队选**；G1 通过时在基线记录中 **写明选用哪一�
 
 | 选用 | 更适合 | v1 要点 |
 |------|--------|---------|
-| **Scrum** | 产品型、需固定节奏演示、2–4 周承诺 | 迭代计划 + Review 演示增量；AI 不虚构 Sprint 编号除非项目已定义 |
-| **Kanban** | 运维、缺陷、持续小改、流量稳定 | 限制 WIP、可视化；AI 不强行套 Sprint 仪式 |
+| **Scrum** | 产品型、需固定节奏演示、2–4 周承诺 | 迭代计划 + Review；详见 [`delivery/scrum-minimal.md`](delivery/scrum-minimal.md) |
+| **Kanban** | 运维、缺陷、持续小改、流量稳定 | WIP 限制；详见 [`delivery/kanban-minimal.md`](delivery/kanban-minimal.md) |
 
-**v2**：[`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)、[`delivery/definition-of-done.md`](delivery/definition-of-done.md)。
+**v2**：[`choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)、[`scrum-minimal.md`](delivery/scrum-minimal.md)、[`kanban-minimal.md`](delivery/kanban-minimal.md)、[`definition-of-done.md`](delivery/definition-of-done.md)。
 
 ---
 

@@ -267,6 +267,7 @@ flowchart LR
 Tenet/                          # 官方仓（本仓库）
 ├── AGENTS.md                   # AI 路由 → tenet/AGENTS.md（非流程正文）
 ├── LICENSE                     # MIT
+├── CHANGELOG.md                # 版本摘要
 ├── CONTRIBUTING.md             # 官方仓 commit/PR 约定（SSOT）
 ├── README.md                   # 本文件
 └── tenet/
@@ -286,7 +287,9 @@ Tenet/                          # 官方仓（本仓库）
         ├── OVERVIEW.md
         ├── delivery/
         │   ├── definition-of-done.md
-        │   └── choose-scrum-kanban.md
+        │   ├── choose-scrum-kanban.md
+        │   ├── scrum-minimal.md
+        │   └── kanban-minimal.md
         ├── gates/
         │   ├── G0-charter.md
         │   ├── G1-baseline.md

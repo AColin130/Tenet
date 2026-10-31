@@ -7,6 +7,7 @@
 | [`g0-start.md`](g0-start.md) | 开始或继续 G0 charter |
 | [`discovery-sync.md`](discovery-sync.md) | Discovery 中途同步 |
 | [`g1-request.md`](g1-request.md) | 申请 G1 / 基线评审 |
+| [`g2-request.md`](g2-request.md) | 申请 G2 / 重大变更 |
 | [`delivery-item.md`](delivery-item.md) | Delivery 单项工作 |
 | [`stage-feedback.md`](stage-feedback.md) | 阶段结束反馈（AI 也应主动发出同类问句） |
 

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 阅读 Tenet 总览
+    url: https://github.com/AColin130/Tenet/blob/main/tenet/process/OVERVIEW.md
+    about: 流程、关口、嵌入 tenet/ 方式
+  - name: CONTRIBUTING（commit 约定）
+    url: https://github.com/AColin130/Tenet/blob/main/CONTRIBUTING.md
+    about: 官方仓 PR / commit 语言与格式
