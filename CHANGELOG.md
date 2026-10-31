@@ -5,14 +5,19 @@
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-10-31
+
 ### Added
 
-- v1.5：WeCarver 对照采纳 — Tier 模板、ai-doc-map/llms/PR/journal/mistake 模板、grill-doc-default、cursor-rules-example、ai-collaboration 扩展、根 `llms.txt`
-- `tenet/adoption/project-vs-tenet.md`：项目 `docs/` vs `tenet/` 包分离
-- `.github/` Issue / PR 模板
-- `CHANGELOG.md`
-- `tenet/process/prompts/g2-request.md`
-- `tenet/process/delivery/scrum-minimal.md`、`kanban-minimal.md`
+- **WeCarver 对照采纳（元层/模板）**：`governance-tier-template.md`、`adoption/templates/*`（ai-doc-map、llms、PR、journal、mistake）、`grill-doc-default.md`、`cursor-rules-example/`、`integration-backlog.md`（closed）
+- 根 `llms.txt`（官方仓入口）；`ai-collaboration.md` 扩展（cite SSOT、读序封顶、子 Agent、Skills）
+- `project-vs-tenet.md`：项目 `docs/` vs `tenet/`、backlog 约定
+- `.github/` Issue/PR 模板；`CHANGELOG.md`；`g2-request`；`scrum-minimal` / `kanban-minimal`
+- `docs/releases/v1.5.0.md`
+
+### Changed
+
+- `OVERVIEW` / `for-leads` / `code-review` / `engineering-standards` / `facilitation` 与 v1.5 行为对齐
 
 ## [1.4.0] - 2026-10-31
 
@@ -60,6 +65,7 @@
 - 五件套：AGENTS、OVERVIEW、G0、G1、exit-criteria
 - README（顶英下中）、MIT LICENSE
 
+[1.5.0]: https://github.com/AColin130/Tenet/releases/tag/v1.5.0
 [1.4.0]: https://github.com/AColin130/Tenet/releases/tag/v1.4.0
 [1.3.0]: https://github.com/AColin130/Tenet/compare/v1.0.0...v1.4.0
 [1.2.0]: https://github.com/AColin130/Tenet/compare/v1.0.0...v1.4.0

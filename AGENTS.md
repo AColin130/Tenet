@@ -25,4 +25,4 @@
 
 ---
 
-Tenet 包版本（文档 v1.4）：与 `tenet/process/OVERVIEW.md` 文末版本一致。许可证：仓库根 [`LICENSE`](LICENSE)（MIT）。
+Tenet 包版本（文档 v1.5）：与 `tenet/process/OVERVIEW.md` 文末版本一致。许可证：仓库根 [`LICENSE`](LICENSE)（MIT）。Release：[`docs/releases/v1.5.0.md`](docs/releases/v1.5.0.md)
