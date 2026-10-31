@@ -56,7 +56,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 
 ### Delivery 轨（G1 通过后）
 
-- 目录、模块、CMake 等 **须与已批准基线记录 / ADR 一致**；变更走 ADR 或 v2 变更关口（G2）。
+- 目录、模块、CMake 等 **须与已批准基线记录 / ADR 一致**；结构性变更走 [`process/gates/G2-change.md`](process/gates/G2-change.md)（ADR + baseline 升版）。
 - 迭代内交付 **可演示增量**；发布与质量门禁遵循 OVERVIEW 中的 **语义**（非 Tenet 绑定的 CI 模板）。
 
 ---
@@ -91,9 +91,16 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 | [`collaboration/ai-collaboration.md`](collaboration/ai-collaboration.md) | AI 回复格式与多工具约定 |
 | [`process/delivery/definition-of-done.md`](process/delivery/definition-of-done.md) | Delivery 完成标准 |
 | [`process/delivery/choose-scrum-kanban.md`](process/delivery/choose-scrum-kanban.md) | Scrum / Kanban 选型 |
-| [`adoption/for-newcomers.md`](adoption/for-newcomers.md) | 新手路径与模板入口 |
+| [`process/gates/G2-change.md`](process/gates/G2-change.md) | G1 后重大变更 |
+| [`cpp/adr-template.md`](cpp/adr-template.md) | ADR 空白模板 |
+| [`adoption/for-newcomers.md`](adoption/for-newcomers.md) | 新手路径、拷贝 tenet、单仓 |
+| [`adoption/for-leads.md`](adoption/for-leads.md) | 负责人裁剪 Tenet |
+| [`collaboration/roles.md`](collaboration/roles.md) | 角色与关口签字 |
+| [`collaboration/code-review.md`](collaboration/code-review.md) | Review 与 DoD |
+| [`collaboration/commit-conventions.md`](collaboration/commit-conventions.md) | Git 提交模板（业务仓可选） |
+| [`cpp/engineering-standards.md`](cpp/engineering-standards.md) | C++ 协作底线（非目录模板） |
 
-v2 计划（未写不入链）：`collaboration/roles.md`、`code-review.md`、`cpp/*`、`adoption/for-leads.md`、`gates/G2-change.md`。
+**路线图**：v1.4 文档集齐；Git 官方仓约定见仓库根 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)。后续 **Issue 驱动** 增量。
 
 ---
 
@@ -123,7 +130,8 @@ v2 计划（未写不入链）：`collaboration/roles.md`、`code-review.md`、`
 | 质量门禁 | Quality gate |
 | 技术探针 | Spike |
 | 可丢弃代码 | Disposable code |
+| 重大变更关口 | Change / G2 |
 
 ---
 
-文档 v1.2 · 与 [`process/OVERVIEW.md`](process/OVERVIEW.md) 版本一致。
+文档 v1.4 · 与 [`process/OVERVIEW.md`](process/OVERVIEW.md) 版本一致。

@@ -16,7 +16,7 @@ Tenet **不** 规定具体测试框架或 CI 文件名；下列为 **C++ 项目�
 | 1 | 与 **Baseline** 及 **相关 ADR** 一致；结构性变更已有 **已接受 ADR** |
 | 2 | **验收方式** 在开工前已写明（如：命令、exit 0、指定测试名），且 **本机或 CI 已通过** |
 | 3 | **构建** 按项目 G0/baseline 约定成功（Debug 或 baseline 指定配置） |
-| 4 | **Review**：按团队规模 — 至少 **作者自检清单**；多人团队则 **另一人看过 diff**（v2 `code-review.md` 细化） |
+| 4 | **Review**：见 [`../../collaboration/code-review.md`](../../collaboration/code-review.md)；单人可自检 + Delivery 停步 |
 | 5 | **无** 未标注 disposable 的 spike 残留进正式树 |
 | 6 | 文档：若改对外行为/API，**用户可见说明** 或 ADR 已更新 |
 | 7 | **Tenet 停步**：AI 或负责人已发 [`../prompts/stage-feedback.md`](../prompts/stage-feedback.md)「Delivery 单项停步」，用户确认后再开下一项 |

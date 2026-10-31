@@ -56,27 +56,45 @@
 ## 试点已经 hello world 了，我下一步？
 
 - 新想法 **不改范围** → 写进 backlog，用 **delivery-item** 模板一项一项做。  
-- 要 **换工具链 / 扩 scope** → 跟 AI 说，走 **ADR**（你试点里的 ADR-0002 就是例子）。  
+- 要 **换工具链 / 扩 scope** → 跟 AI 说，走 **ADR + G2**（[`G2-change.md`](../process/gates/G2-change.md)、[`adr-template.md`](../cpp/adr-template.md)）。  
 - 不用 **补很多正式需求文档**；Tenet 要的是 **该落盘时落盘**（charter / ADR / baseline）。
+
+---
+
+## 推荐：拷贝 `tenet/` + 一个业务仓长期用
+
+Tenet **官方仓不含你的业务代码**；C++ 只在 **你自己的仓库** 里写。验证 Tenet 是否好用，用 **单独试点仓** 即可，**不必** 每测一次 Tenet 就新开项目。
+
+| 做法 | 说明 |
+|------|------|
+| **拷贝 `tenet/`** | 从 Tenet 官方仓复制 `tenet/` 目录（建议同时保留 [LICENSE](../../LICENSE) 文本） |
+| **单仓** | charter、ADR、baseline、源码 **同一仓库** 长期维护 |
+| **何时再拷** | 只有想要 **新手册**（新模板、DoD、G2 等）时再覆盖/合并 `tenet/` |
+| **不要** | 用 Tenet 官方仓 **根** `AGENTS.md` 覆盖业务仓根；业务根用 **胶水**（见 [`../process/OVERVIEW.md`](../process/OVERVIEW.md) 嵌入一节） |
+
+**Submodule** 可选；不熟 git 时 **拷贝就够**。
 
 ---
 
 ## 和「更新 Tenet 文档包」的关系（可选）
 
-若业务仓里的 `tenet/` 是 **从 Tenet 官方仓 submodule 拉下来的**：  
-官方仓更新后，在业务仓执行 `git submodule update --remote tenet`（路径按你实际）即可拿到新模板。  
+若业务仓里的 `tenet/` 是 **拷贝** 的：想要新文档时再拷一次官方 `tenet/`（若你改过 tenet 内文件，注意合并）。
 
-若是 **拷贝** 的 `tenet/`，偶尔 **再拷一次** 或改 submodule 即可。  
-**试点已 OK** = 不必为 v1.1 专门折腾，除非你想要新模板。
+若用 **submodule**：官方更新后在业务仓 `git submodule update --remote tenet`（路径按实际）。
+
+**不更新 tenet/** 也可以继续 **构建和业务 Delivery**；只是没有最新 **复制模板 / 流程条文**。
 
 ---
 
 ## 相关文档
 
 - [`../process/gates/G0-charter.md`](../process/gates/G0-charter.md)
+- [`../process/gates/G2-change.md`](../process/gates/G2-change.md)
+- [`../cpp/adr-template.md`](../cpp/adr-template.md)
 - [`../process/delivery/definition-of-done.md`](../process/delivery/definition-of-done.md)
+- [`for-leads.md`](for-leads.md)
 - 仓库 [`README.md`](../../README.md)
 
 ---
 
-文档 v1.2 · Tenet adoption
+文档 v1.4 · Tenet adoption

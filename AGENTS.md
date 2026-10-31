@@ -21,6 +21,8 @@
 克隆或浏览 **Tenet 官方仓** 时，Cursor 等工具可能先打开本文件。请立即转到 **`tenet/AGENTS.md`** 与 **`tenet/process/OVERVIEW.md`**。  
 将 Tenet **嵌入业务仓** 时：业务仓根目录使用 **项目胶水** `AGENTS.md`（见 OVERVIEW），**不要** 复制本路由文件覆盖业务根。
 
+**在本官方仓提交 Git**（commit/PR 语言与格式）→ [`CONTRIBUTING.md`](CONTRIBUTING.md)。业务仓可选模板 [`tenet/collaboration/commit-conventions.md`](tenet/collaboration/commit-conventions.md)。
+
 ---
 
-Tenet 包版本（文档 v1.2）：与 `tenet/process/OVERVIEW.md` 文末版本一致。许可证：仓库根 [`LICENSE`](LICENSE)（MIT）。
+Tenet 包版本（文档 v1.4）：与 `tenet/process/OVERVIEW.md` 文末版本一致。许可证：仓库根 [`LICENSE`](LICENSE)（MIT）。

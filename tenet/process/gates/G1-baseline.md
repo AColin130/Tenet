@@ -122,21 +122,13 @@ DoD 细项见 [`../delivery/definition-of-done.md`](../delivery/definition-of-do
 
 ---
 
-## 重大变更（v1 无独立 G2 文档）
+## 重大变更（G2 关口）
 
-Baseline v1 通过后，若出现以下情况，**须停止当作小改动直接做**：
+Baseline 通过后，结构性变更 **须走 G2**，不得当作普通 Delivery 小项 silent 合并。触发条件、流程与模板见 **[`G2-change.md`](G2-change.md)**。摘要：
 
-- 改变模块边界或主依赖栈  
-- 扩大 G0 非目标之外的 scope  
-- 改变集成契约或对外 API 承诺  
-
-**v1 要求**：
-
-1. 新 ADR 或修订 ADR，状态 **已接受**  
-2. 更新 `baseline.md` 升版（v2…）或附录 **变更记录**  
-3. **人工评审**（与 G1 相同或更轻的角色组合），在基线文档中记录 **变更通过日期**  
-
-**v2** 将提供 [`G2-change.md`](G2-change.md) 独立关口；v1 不强制文件名，但 **不得** 跳过 ADR + 基线升版。
+- 新 ADR 或修订 ADR，状态 **已接受**（模板 [`../../cpp/adr-template.md`](../../cpp/adr-template.md)）  
+- 更新 `baseline.md` **升版** 或变更附录  
+- **G2 评审** 记录 **通过**  
 
 ---
 
@@ -174,8 +166,9 @@ G1 标记 **通过** 后，AI **必须停步** 并发出 [`../prompts/stage-feed
 - [`../discovery/exit-criteria.md`](../discovery/exit-criteria.md)
 - [`../discovery/facilitation.md`](../discovery/facilitation.md)
 - [`../OVERVIEW.md`](../OVERVIEW.md)
+- [`G2-change.md`](G2-change.md)
 - [`../../AGENTS.md`](../../AGENTS.md)
 
 ---
 
-文档 v1.1 · Tenet process（与 OVERVIEW 版本一致）
+文档 v1.3 · Tenet process（与 OVERVIEW 版本一致）

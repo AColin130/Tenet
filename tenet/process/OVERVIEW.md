@@ -61,7 +61,8 @@ flowchart LR
   G0 --> D
   D -->|exit-criteria| G1
   G1 --> V
-  V -->|重大变更 v2 G2| D
+  V -->|重大变更 G2| G2[G2 变更]
+  G2 --> V
 ```
 
 | 层级 | 做什么 | Tenet v1 文档 |
@@ -69,10 +70,11 @@ flowchart LR
 | **G0** | 值不值得做、边界、合规红线、Tenet 引用方式 | [`gates/G0-charter.md`](gates/G0-charter.md) |
 | **Discovery** | 选型、ADR、spike、非功能底线 | [`discovery/exit-criteria.md`](discovery/exit-criteria.md) |
 | **G1** | Discovery 出口 → 允许 **正式** 工程落盘 | [`gates/G1-baseline.md`](gates/G1-baseline.md) |
+| **G1 后重大变更** | ADR + baseline 升版 | [`gates/G2-change.md`](gates/G2-change.md) |
 | **Delivery** | Scrum **或** Kanban 迭代交付 | [`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)、[`delivery/definition-of-done.md`](delivery/definition-of-done.md) |
 | **发布** | 小批量、可回滚、门禁语义 | 本文件「自动化与发布」 |
 
-**G2（重大范围/架构变更）**：v1 仅在 G1 中指向 **ADR + 人工评审**；独立 `G2-change.md` 为 v2。
+**G2（重大范围/架构变更）**：[`gates/G2-change.md`](gates/G2-change.md)（G1 之后；ADR + baseline 升版）。
 
 ---
 
@@ -159,18 +161,23 @@ AI 在改代码前应提醒：**当前变更是否对应 Delivery 项、是否�
 - [`discovery/exit-criteria.md`](discovery/exit-criteria.md)
 - 仓库 `README.md`
 
-**v1.2 已包含**
+**v1.3 已包含（框架收工）**
 
-- [`delivery/definition-of-done.md`](delivery/definition-of-done.md)
-- [`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)
-- [`../adoption/for-newcomers.md`](../adoption/for-newcomers.md)
+- [`gates/G2-change.md`](gates/G2-change.md)
+- [`../cpp/adr-template.md`](../cpp/adr-template.md)
+- [`../adoption/for-newcomers.md`](../adoption/for-newcomers.md)（含 **拷贝 tenet + 单仓** 推荐）
 
-**v2 路线图（规划，未写不入 AI 强制链）**
+**v1.1 教练层**：[`discovery/facilitation.md`](discovery/facilitation.md)、[`prompts/README.md`](prompts/README.md)、[`../collaboration/ai-collaboration.md`](../collaboration/ai-collaboration.md)
 
-1. `collaboration/roles.md`、`code-review.md`
-2. `cpp/engineering-standards.md`、`adr-template.md`
-3. `adoption/for-leads.md`
-4. `gates/G2-change.md` — 重大变更关口
+**v1.2**：[`delivery/definition-of-done.md`](delivery/definition-of-done.md)、[`delivery/choose-scrum-kanban.md`](delivery/choose-scrum-kanban.md)
+
+**v1.4 已包含（协作与 C++ 底线）**
+
+- [`../collaboration/roles.md`](../collaboration/roles.md)、[`code-review.md`](../collaboration/code-review.md)
+- [`../cpp/engineering-standards.md`](../cpp/engineering-standards.md)
+- [`../adoption/for-leads.md`](../adoption/for-leads.md)
+
+**路线图**：v1.4 文档集齐；**Git 提交**（Tenet 官方仓）见仓库根 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)。新主题 **Issue 驱动**。
 
 ---
 
@@ -181,4 +188,4 @@ Tenet v1 **流程正文全中文**。仓库 `README.md` 采用 **顶英下中**�
 
 ---
 
-**文档版本**：v1.2 · v1 五件套 + 教练层 + DoD / 选型 / 新手 adoption
+**文档版本**：v1.4 · 完整元层文档集（流程 + 教练 + G2 + 协作 + C++ 底线 + adoption）

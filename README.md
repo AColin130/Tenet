@@ -1,7 +1,7 @@
 # Tenet
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Docs](https://img.shields.io/badge/docs-v1.2-informational)](tenet/process/OVERVIEW.md)
+[![Docs](https://img.shields.io/badge/docs-v1.4-informational)](tenet/process/OVERVIEW.md)
 
 **Tenet** is an open **meta-layer** for C++ teams: **team rules + AI guidance** — not a clone-and-run scaffold with a fixed folder layout.
 
@@ -238,6 +238,7 @@ flowchart LR
 | 文档 | 何时读 |
 |------|--------|
 | [`README.md`](README.md) | 第一次接触 Tenet（本文件） |
+| [`CONTRIBUTING.md`](CONTRIBUTING.md) | **官方仓** commit / PR 语言与格式 |
 | [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) | 总流程、嵌入方式、Scrum/Kanban 语义 |
 | [`tenet/AGENTS.md`](tenet/AGENTS.md) | **AI 与维护者** 必读 SSOT |
 | [`tenet/process/gates/G0-charter.md`](tenet/process/gates/G0-charter.md) | 开工 / 立项 |
@@ -249,8 +250,14 @@ flowchart LR
 | [`tenet/adoption/for-newcomers.md`](tenet/adoption/for-newcomers.md) | 零基础路径 |
 | [`tenet/process/delivery/definition-of-done.md`](tenet/process/delivery/definition-of-done.md) | 一项何时算做完 |
 | [`tenet/process/delivery/choose-scrum-kanban.md`](tenet/process/delivery/choose-scrum-kanban.md) | Scrum / Kanban |
+| [`tenet/process/gates/G2-change.md`](tenet/process/gates/G2-change.md) | G1 后重大变更 |
+| [`tenet/cpp/adr-template.md`](tenet/cpp/adr-template.md) | ADR 空白模板 |
+| [`tenet/cpp/engineering-standards.md`](tenet/cpp/engineering-standards.md) | C++ 协作底线（非脚手架） |
+| [`tenet/collaboration/roles.md`](tenet/collaboration/roles.md) | 角色与关口 |
+| [`tenet/collaboration/code-review.md`](tenet/collaboration/code-review.md) | Code Review |
+| [`tenet/adoption/for-leads.md`](tenet/adoption/for-leads.md) | Tech Lead / 裁剪流程 |
 
-**v2 规划**（C++ 工程规范、`for-leads`、G2 等）见 OVERVIEW「v2 路线图」。
+**文档集 v1.4 已齐**；新主题见 GitHub Issue。
 
 ---
 
@@ -260,13 +267,21 @@ flowchart LR
 Tenet/                          # 官方仓（本仓库）
 ├── AGENTS.md                   # AI 路由 → tenet/AGENTS.md（非流程正文）
 ├── LICENSE                     # MIT
+├── CONTRIBUTING.md             # 官方仓 commit/PR 约定（SSOT）
 ├── README.md                   # 本文件
 └── tenet/
     ├── AGENTS.md               # 流程与 AI 协作 SSOT
+    ├── cpp/
+    │   ├── adr-template.md
+    │   └── engineering-standards.md
     ├── collaboration/
-    │   └── ai-collaboration.md
+    │   ├── ai-collaboration.md
+    │   ├── roles.md
+    │   ├── code-review.md
+    │   └── commit-conventions.md
     ├── adoption/
-    │   └── for-newcomers.md
+    │   ├── for-newcomers.md
+    │   └── for-leads.md
     └── process/
         ├── OVERVIEW.md
         ├── delivery/
@@ -274,7 +289,8 @@ Tenet/                          # 官方仓（本仓库）
         │   └── choose-scrum-kanban.md
         ├── gates/
         │   ├── G0-charter.md
-        │   └── G1-baseline.md
+        │   ├── G1-baseline.md
+        │   └── G2-change.md
         ├── discovery/
         │   ├── exit-criteria.md
         │   └── facilitation.md
@@ -289,7 +305,7 @@ my-cpp-app/
 ├── docs/
 │   ├── charter.md              # 建议：项目 G0
 │   └── adr/                    # 建议：架构决策记录
-├── tenet/                      # 来自 Tenet 上游（submodule 等）
+├── tenet/                      # 拷贝或 submodule 自 Tenet 官方仓（推荐拷贝 + 单仓）
 │   └── …
 └── …                           # 你的源码与 CMake（G1 后按基线生长）
 ```
@@ -311,13 +327,15 @@ A：不必须，但胶水 `AGENTS.md` 里的链接要指向你实际路径；Ten
 A：MIT 短、 permissive，便于嵌入业务仓；保留版权声明即可。若你特别关心专利授权条款，可在 **你的** 项目中另行评估许可证策略（G0 红线之一）。
 
 **Q：我是纯新手，看不懂 ADR / Stage-Gate？**  
-A：先只做 G0 问卷（[`G0-charter.md`](tenet/process/gates/G0-charter.md) 底部模板），或 [`for-newcomers.md`](tenet/adoption/for-newcomers.md) + [`prompts/g0-start.md`](tenet/process/prompts/g0-start.md)。
+A：[`for-newcomers.md`](tenet/adoption/for-newcomers.md) + [`prompts/g0-start.md`](tenet/process/prompts/g0-start.md)。负责人裁剪见 [`for-leads.md`](tenet/adoption/for-leads.md)。
 
 ---
 
 ## 贡献
 
 欢迎通过 [GitHub Issues / Pull Requests](https://github.com/AColin130/Tenet) 改进 **Tenet 元层文档**（`tenet/**`）。
+
+**提交与 PR 怎么写（commit 语言、前缀格式）** → 请先读 **[`CONTRIBUTING.md`](CONTRIBUTING.md)**。
 
 - 流程正文变更：改 `tenet/` 内文件，保持与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) 互链一致。
 - **勿** 在根 [`AGENTS.md`](AGENTS.md) 追加流程条款（维护约定见该文件「给人」一节）。
@@ -335,4 +353,4 @@ A：先只做 G0 问卷（[`G0-charter.md`](tenet/process/gates/G0-charter.md) �
 
 ---
 
-**文档版本**：v1.2（与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) 文末一致）
+**文档版本**：v1.4（与 [`tenet/process/OVERVIEW.md`](tenet/process/OVERVIEW.md) 文末一致）。**本仓无业务 C++**；C++ 仅在你自己的业务仓中编写。
