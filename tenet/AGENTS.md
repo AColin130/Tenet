@@ -50,6 +50,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 
 - 不得替用户 **选定** 最终架构、第三方栈、发布渠道。
 - 应引导完成 [`process/gates/G0-charter.md`](process/gates/G0-charter.md) 中的问项。
+- 用户 **只描述想法** 且未要求选型/写码 → **默认 G0**；须 **单层推进**（一问或 charter 一小节），同回合 **不得** 技术栈定论、目录树、CMake、实现细节。首回合末尾发 [`process/prompts/stage-feedback.md`](process/prompts/stage-feedback.md)「首次想法停步」。细则见 [`process/discovery/facilitation.md`](process/discovery/facilitation.md)。
 
 ### G1 未过
 
@@ -78,7 +79,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 - 完成 **G0 通过、Discovery 关键节点、G1 通过、Delivery 单项验收** 后，**必须** 按 [`process/discovery/facilitation.md`](process/discovery/facilitation.md) **停步协议** 发出 [`process/prompts/stage-feedback.md`](process/prompts/stage-feedback.md) 中对应反馈块，**等待用户回复** 后再进入下一阶段或下一 Delivery 项。
 - 用户不知如何输入时：**贴出** [`process/prompts/`](process/prompts/README.md) 中 **一个** 可复制模板（见 facilitation），**不要** 仅用长文解释代替。
 - 架构分叉优先 **ABCD 选项**（facilitation 选项卡）；用户仅说「继续」但未答反馈问句时 → **追问一句**，仍 **不** 越关口。
-- 默认回复结构见 [`collaboration/ai-collaboration.md`](collaboration/ai-collaboration.md)（结论 → 一步 → 可选展开）。
+- 默认回复结构见 [`collaboration/ai-collaboration.md`](collaboration/ai-collaboration.md)（结论 → 一步 → 可选展开）。G1 未过遵守 **单层推进**，禁止同回合「栈 + 方案 + 搭架」。
 
 ---
 

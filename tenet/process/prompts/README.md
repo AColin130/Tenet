@@ -4,7 +4,9 @@
 
 | 模板 | 用途 |
 |------|------|
+| [`g0-idea-only.md`](g0-idea-only.md) | **只聊想法**：钉 G0，禁止提前技术栈/实现 |
 | [`g0-start.md`](g0-start.md) | 开始或继续 G0 charter |
+| [`discovery-tech-compare.md`](discovery-tech-compare.md) | Discovery **仅本回合** 技术栈 ABCD，不写基线/搭架 |
 | [`discovery-sync.md`](discovery-sync.md) | Discovery 中途同步 |
 | [`g1-request.md`](g1-request.md) | 申请 G1 / 基线评审 |
 | [`g2-request.md`](g2-request.md) | 申请 G2 / 重大变更 |

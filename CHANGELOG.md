@@ -8,6 +8,7 @@
 ### Added
 
 - **Agent 自主度三条**（`tenet/AGENTS.md`）：同一纠正必须升格到 Tier 0 或 ADR；AI 声称完成前自己跑验收；验收尚未无人跑通时不扩大并行，自动合并默认关闭。细则见 governance-tier、DoD、code-review、ai-collaboration。
+- **教练层防越挖**：意图→默认阶段、单层推进、G0 黑名单、首次想法停步；模板 `g0-idea-only.md`、`discovery-tech-compare.md`（`facilitation.md`、`ai-collaboration.md`、`stage-feedback.md`）。
 
 ## [1.5.0] - 2026-10-31
 

@@ -17,12 +17,55 @@
 
 ---
 
+## 用户意图 → 默认阶段（G1 未过）
+
+在未过 G1 且用户 **未** 写明阶段时，按下列 **默认** 判定（用户一句钉阶段时 **以用户为准**）：
+
+| 用户主要在说什么 | 默认阶段 | 本回合 AI 做什么 |
+|------------------|----------|------------------|
+| 想法、痛点、要不要做、给谁用 | **G0** | 问边界/非目标/成功标准之一；**不** 定技术栈 |
+| 技术栈、架构对比、ADR、风险 | **Discovery** | 对比表或 **一道** ABCD；**不** 批量 CMake/模块树 |
+| 基线、落盘、开始写、实现某功能 | 先确认 | 若 G1 未过 → 引导 exit-criteria / g1-request；**不** 直接写码 |
+| 已 G1 且对应 Delivery 项 | **Delivery** | delivery-item + DoD；**不** 越 G2 |
+
+用户可贴 [`../prompts/g0-idea-only.md`](../prompts/g0-idea-only.md) 或 [`../prompts/discovery-tech-compare.md`](../prompts/discovery-tech-compare.md) 覆盖默认。
+
+---
+
+## 单层推进（强制 · G1 未过）
+
+**禁止** 在同一回复里堆多层内容，例如：技术栈定论 + 模块目录 + CMake 片段 + 验收命令。
+
+| 阶段 | 一回合最多推进 |
+|------|----------------|
+| G0 | **一小节** charter 或 **一个问题** |
+| Discovery | **一道** ABCD，或 **一张** 短对比表（不含落盘） |
+| 准备 G1 | 指向 exit-criteria / baseline **草案要点**，不批量生成仓库树 |
+
+用户追问「展开」后，才可写长段；默认仍遵守 [`../../collaboration/ai-collaboration.md`](../../collaboration/ai-collaboration.md) 回复顺序。
+
+---
+
+## G0 未过 · 教练黑名单（主动禁止）
+
+除 [`../../AGENTS.md`](../../AGENTS.md) 已有禁止项外，当判定为 **G0** 时，AI **不得主动**：
+
+- 推荐或敲定最终技术栈、框架、第三方库清单  
+- 给出目录树、monorepo 布局、CMake 工程骨架  
+- 写实现步骤、类设计、接口草案（除非用户 **明确**「只要纸面 spike 且 disposable」）  
+- 宣称「建议架构如下」并当已定案  
+
+允许：用 **非绑定** 的方式举例（「常见有 A/B，G0 不选」），且须引向 charter 填空或 [`../prompts/g0-start.md`](../prompts/g0-start.md)。
+
+---
+
 ## 阶段停步协议（强制）
 
 完成下列事件后，AI **必须** 发出 [`../prompts/stage-feedback.md`](../prompts/stage-feedback.md) 中 **对应反馈块**（可略改措辞，**四问结构保留**），并 **停止** 以下行为直到用户明确回复：
 
 | 事件 | 停步后禁止（直到用户回复） |
 |------|----------------------------|
+| 用户 **首次** 描述项目/产品想法（见 [`../prompts/stage-feedback.md`](../prompts/stage-feedback.md)「首次想法停步」） | 同回合技术栈定论、实现方案、写码、搭架 |
 | G0 文档写入且标为通过 | 进入 G1、批量 CMake/模块树 |
 | Discovery 一轮结束或 exit 项齐 | 宣称 G1 已通过、正式基线落盘 |
 | G1 / baseline 标为通过 | 开始下一 Delivery 项（若用户未指定） |
@@ -38,7 +81,9 @@
 
 | 用户意图 | 给用户的模板 |
 |----------|----------------|
+| 只有想法、怕被 AI 挖太深 | [`../prompts/g0-idea-only.md`](../prompts/g0-idea-only.md) |
 | 刚嵌入 Tenet / 新项目 | [`../prompts/g0-start.md`](../prompts/g0-start.md) |
+| G0 过了，本回合只要选型对比 | [`../prompts/discovery-tech-compare.md`](../prompts/discovery-tech-compare.md) |
 | Discovery 推进 | [`../prompts/discovery-sync.md`](../prompts/discovery-sync.md) |
 | 准备基线 | [`../prompts/g1-request.md`](../prompts/g1-request.md) |
 | 重大变更 | [`../prompts/g2-request.md`](../prompts/g2-request.md) |
@@ -113,4 +158,4 @@ AI 在用户 **不知如何开口** 时，应 **直接贴对应模板**（不是
 
 ---
 
-文档 v1.1 · Tenet 教练层（与 OVERVIEW 版本一致）
+文档 v1.5 · Tenet 教练层（意图判定、单层推进、首次想法停步）

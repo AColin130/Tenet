@@ -18,6 +18,16 @@
 
 ---
 
+## 意图与单层（G1 未过 · 强制）
+
+- 回复第 1 行须含 **判定阶段**（G0 / Discovery / 待 G1 / Delivery）。  
+- 只聊想法 → **默认 G0**；未过 G1 时 **一回合一层**（见 [`../process/discovery/facilitation.md`](../process/discovery/facilitation.md)）。  
+- **禁止** 同一回复：**技术栈定论 + 模块/CMake + 验收/代码** 任意两项及以上。  
+- 用户首次描述项目想法 → 回合末发 **首次想法停步**（[`../process/prompts/stage-feedback.md`](../process/prompts/stage-feedback.md)）。  
+- 用户可贴 [`../process/prompts/g0-idea-only.md`](../process/prompts/g0-idea-only.md)、[`../process/prompts/discovery-tech-compare.md`](../process/prompts/discovery-tech-compare.md)。
+
+---
+
 ## 改代码前：问题 → 唯一 SSOT（业务仓 Tier 2）
 
 若业务仓已有 [`docs/ai-doc-map.md`](../adoption/templates/ai-doc-map.template.md)（从模板复制）：

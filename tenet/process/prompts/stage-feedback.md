@@ -1,8 +1,24 @@
 # 阶段结束 · 标准反馈
 
-AI 在 **G0 落盘、Discovery 里程碑、EXIT 确认、G1 通过、Delivery 单项完成** 后，须先发对应反馈块，**等待用户回复** 后再进入下一阶段或继续大批量生成。完整规则见 [`../discovery/facilitation.md`](../discovery/facilitation.md)。
+AI 在 **首次听完想法、G0 落盘、Discovery 里程碑、EXIT 确认、G1 通过、Delivery 单项完成** 后，须先发对应反馈块，**等待用户回复** 后再进入下一阶段或继续大批量生成。完整规则见 [`../discovery/facilitation.md`](../discovery/facilitation.md)。
 
 用户也可 **复制** 下列块主动要求 AI 停步复盘。
+
+---
+
+## 首次听完想法（G0 未落盘也须发）
+
+用户 **首次** 描述产品/项目想法，且 **未** 明确「进入 Discovery / 选型 / 写码」时，AI **必须** 在当回合末尾发出本块（可略改措辞），**不得** 在同一回合附带技术栈定论或实现方案。
+
+```text
+【Tenet · 首次想法停步】当前按 G0 处理，本回合不进入 Discovery / 不搭工程。
+
+请回复：
+1. 我描述里是否误解了你的问题或边界？
+2. 非目标里有没有要先写死的「不做」？
+3. 下一步选一项：继续补 G0 charter｜进入 Discovery 选型｜只记 backlog 暂不动
+4. 其他一句（可选）
+```
 
 ---
 
