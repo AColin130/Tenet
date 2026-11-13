@@ -63,6 +63,16 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 
 ---
 
+## Agent 自主度（三条）
+
+教 AI **做某一件事** 的操作卡（Cursor Skill、项目内 skill）**不** 写入 `tenet/`。下列三条是手册规矩；与后文冲突时 **以本节为准**。细则：[`collaboration/ai-collaboration.md`](collaboration/ai-collaboration.md)、[`collaboration/governance-tier-template.md`](collaboration/governance-tier-template.md)、[`process/delivery/definition-of-done.md`](process/delivery/definition-of-done.md)、[`collaboration/code-review.md`](collaboration/code-review.md)。
+
+1. **同一纠正再说一次，必须升格。** Review 或 mistake 活表里，同一类问题再次出现：写成会失败的检查（构建、lint、测试；Tier 0），或经 ADR 从接口上消除这种写法。只留在提示词、rules、Skill 里，**不算** 升格。
+2. **声称完成前，AI 自己跑验收。** 命令以业务仓 testing SSOT 为准，且能在无人转发日志或截图时跑完。回复里给出命令和通过与否。用户代贴输出后再判断，**不算** 本条通过。
+3. **仍靠人盯时，不扩大自主。** 验收还不能无人跑通时，不追加并行 agent 来代替这次验证。**自动合并默认关闭。** 仅当相关不变量已由 Tier 0 拦住，且 baseline **写明** 人如何抽查主分支时，才可在 baseline 中打开。AI **不得** 自行打开。
+
+---
+
 ## 阶段停步与教练引导（v1.1 起强制）
 
 - 完成 **G0 通过、Discovery 关键节点、G1 通过、Delivery 单项验收** 后，**必须** 按 [`process/discovery/facilitation.md`](process/discovery/facilitation.md) **停步协议** 发出 [`process/prompts/stage-feedback.md`](process/prompts/stage-feedback.md) 中对应反馈块，**等待用户回复** 后再进入下一阶段或下一 Delivery 项。
@@ -138,6 +148,7 @@ Tenet 是 C++ 团队的 **规矩 + AI 引导** 元层包，**不是** 带固定�
 | 技术探针 | Spike |
 | 可丢弃代码 | Disposable code |
 | 重大变更关口 | Change / G2 |
+| 升格 | Escalation（同一纠正从人眼拦到机器拦，或从接口上消除） |
 
 ---
 

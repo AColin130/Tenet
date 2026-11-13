@@ -12,6 +12,8 @@ local 草稿（对话/笔记）
 
 **禁止** 把坑 **堆进** `unreleased.md` 或 journal 代替活表。
 
+**升格**：同一行再次发生时，「防再犯」必须改成 **会失败的检查**（命令、lint、测试）或 **ADR 路径**。只写「提醒 AI / 记在 skill 里」不算升格。见 [`../../collaboration/governance-tier-template.md`](../../collaboration/governance-tier-template.md)。
+
 ## 活表（示例列）
 
 | ID | 现象 | 根因 | 防再犯（链 SSOT） | 状态 |

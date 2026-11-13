@@ -5,6 +5,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- **Agent 自主度三条**（`tenet/AGENTS.md`）：同一纠正必须升格到 Tier 0 或 ADR；AI 声称完成前自己跑验收；验收尚未无人跑通时不扩大并行，自动合并默认关闭。细则见 governance-tier、DoD、code-review、ai-collaboration。
+
 ## [1.5.0] - 2026-10-31
 
 ### Added

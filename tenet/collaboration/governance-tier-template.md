@@ -43,10 +43,26 @@
 
 ---
 
+## 升格（同一纠正再说一次）
+
+条文：[`../AGENTS.md`](../AGENTS.md)「Agent 自主度」第 1 条。
+
+Review 再次指出已指出过的问题，或 mistake 活表里同一根因仍在发生：
+
+| 优先 | 落到 |
+|------|------|
+| 1 | **Tier 0**：构建失败、lint、测试。业务仓写下命令或规则名 |
+| 2 | **ADR / G2**：改接口或结构，使这种写法不再出现 |
+
+Tier 2（`AGENTS`、rules、Skill）可以同时留着提示，**不能** 当作唯一落点。活表「防再犯」列写检查或 ADR 的路径，见 [`../adoption/templates/mistake-registry.template.md`](../adoption/templates/mistake-registry.template.md)。
+
+---
+
 ## 与 Tenet 的关系
 
 - **关口**（G0/G1/G2）= **决策** 是否允许做。  
 - **Tier** = **同一条约束** 落在 CI、人眼、还是 Agent 自觉（+ 人抽查）。  
+- **升格** = 重复纠正离开「只靠人说」，进入 Tier 0 或 ADR。  
 - 详见 [`../adoption/for-leads.md`](../adoption/for-leads.md)、[`../process/delivery/definition-of-done.md`](../process/delivery/definition-of-done.md)。
 
 ---

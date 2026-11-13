@@ -31,6 +31,7 @@
 
 - 在 **`docs/ai-doc-map.md`** 设一行 **测试/验收**（如 `docs/testing.md`）：build target、ctest 路径、必跑用例。  
 - Tenet DoD 只要求 **语义**「验收已跑」；**具体命令** 在业务 testing SSOT。  
+- 该命令须能 **无人值守** 执行。AI 声称完成前自己跑它，见 [`../process/delivery/definition-of-done.md`](../process/delivery/definition-of-done.md)。怎么点击界面、功能地图，留在业务仓操作卡，**不** 由 Tenet 提供。  
 - 专题 `.mdc` 可在改 `src/` 时懒加载并 **链 testing SSOT**（见 cursor-rules-example）。
 
 未勾选的项 **不适用**；AI **不得** 因 Tenet 存在本文而 **默认** 引入 GoogleTest、vcpkg 等。

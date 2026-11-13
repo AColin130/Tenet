@@ -35,7 +35,17 @@ Review 是 **DoD 第 4 条** 的落地方式。Tenet 不绑定 GitHub/GitLab UI�
 - [ ] 需 ADR 的变更已 ADR 已接受
 - [ ] 合并前门禁（baseline §6）满足
 - [ ] PR 描述含 SSOT 路径（见 templates/pull_request_template.business.md）
+- [ ] 重复出现的同类意见已升格（Tier 0 或 ADR），或已记入 mistake 活表并指向该检查
 ```
+
+## 自动合并（默认关闭）
+
+条文：[`../AGENTS.md`](../AGENTS.md)「Agent 自主度」第 3 条。
+
+- **默认**：合并前完成本文件的 Review（另一人看 diff，或单人自检 + Delivery 停步）。  
+- **验收命令还不能无人跑通**：不另开一批 agent 代替这次验证。  
+- **baseline 可写明打开自动合并**，仅当同时满足：这类变更要守的不变量已是 **Tier 0**（失败即进不了主分支）；baseline 写了人 **如何抽查主分支**。  
+- AI **不得** 自行打开自动合并，也不得宣称「无需 Review」即 Delivery 完成。
 
 ## 新符号 / API（不维护全量清单）
 

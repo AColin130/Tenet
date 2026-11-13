@@ -114,7 +114,8 @@ Tenet **不捆绑** GitHub Actions / GitLab CI 模板作为必选项。Tenet 规
 | **发布候选** | 可部署 artifact、版本号策略、回滚路径已知 |
 | **生产** | 灰度或等价策略、监控与 On-call 约定（用户项目 G0/G1 中定义） |
 
-**原则**：能自动化就多自动化，降低 **大 bang 发布** 风险；遗留系统可先从 **合并门禁** 做起。
+**原则**：能自动化就多自动化，降低 **大 bang 发布** 风险；遗留系统可先从 **合并门禁** 做起。  
+**自动合并默认关闭**；打开条件见 [`../collaboration/code-review.md`](../collaboration/code-review.md)。Agent 自主度三条见 [`../AGENTS.md`](../AGENTS.md)。
 
 AI 在改代码前应提醒：**当前变更是否对应 Delivery 项、是否触及未过 ADR 的架构**。
 
